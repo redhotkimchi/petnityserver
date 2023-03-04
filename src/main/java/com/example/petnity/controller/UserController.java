@@ -70,7 +70,8 @@ public class UserController {
         LOGGER.info("[UserController] Response :: response = {}, Response Time = {}ms", response.toString(), System.currentTimeMillis() - StartTime);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
-
+    //branch test 2
+    //newbranch test 2
     @GetMapping("/pet")
     public ResponseEntity<PetDto.Response> getPet(PetDto.Request petDto){
         LOGGER.info("[UserController] perform {} of Petnity API.", "getPet");
