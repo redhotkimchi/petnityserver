@@ -109,11 +109,9 @@ public class UserController {
         LOGGER.info("[UserController] Response :: response = {}, Response Time = {}ms", response.toString(), System.currentTimeMillis() - StartTime);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
-
     @PostMapping("/pet/udpate")
     public PetDto.Response updatePet(){
         return null;
     }
-
 
 }
