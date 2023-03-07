@@ -19,7 +19,7 @@ public class CommentController {
 
         return commentService.saveComment(saveDto);
     }
-    //branch test
+    //example branch test
     @PostMapping(value = "savesubcomment")
     public CommentDto.SaveSubDto subCommentSave(@Valid @RequestBody CommentDto.SaveSubDto saveSubDto){
 
